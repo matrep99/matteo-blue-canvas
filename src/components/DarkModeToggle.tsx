@@ -1,20 +1,28 @@
 import { Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useTheme } from "./ThemeProvider";
 
 export function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
+    <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="transition-smooth hover:shadow-soft rounded-full"
+      className="relative inline-flex h-10 w-20 items-center rounded-full bg-muted transition-all duration-300 hover:shadow-soft"
+      aria-label="Toggle theme"
     >
-      <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <span className="sr-only">Toggle theme</span>
-    </Button>
+      <span
+        className={`absolute left-1 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground transition-transform duration-300 shadow-md ${
+          theme === "dark" ? "translate-x-10" : "translate-x-0"
+        }`}
+      >
+        {theme === "dark" ? (
+          <Moon className="h-4 w-4" />
+        ) : (
+          <Sun className="h-4 w-4" />
+        )}
+      </span>
+      <Sun className={`absolute left-3 h-4 w-4 transition-opacity duration-300 ${theme === "dark" ? "opacity-40" : "opacity-0"}`} />
+      <Moon className={`absolute right-3 h-4 w-4 transition-opacity duration-300 ${theme === "dark" ? "opacity-0" : "opacity-40"}`} />
+    </button>
   );
 }

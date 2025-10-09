@@ -17,38 +17,38 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 20% 20%;
 
-    --primary: 205 85% 65%;
-    --primary-light: 210 90% 75%;
-    --primary-dark: 205 75% 55%;
+    --primary: 218 73% 43%;
+    --primary-light: 218 70% 58%;
+    --primary-dark: 218 73% 33%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 30% 96%;
-    --secondary-foreground: 210 20% 20%;
+    --secondary: 218 30% 96%;
+    --secondary-foreground: 218 20% 20%;
 
-    --muted: 210 25% 95%;
-    --muted-foreground: 210 15% 50%;
+    --muted: 218 25% 95%;
+    --muted-foreground: 218 15% 50%;
 
-    --accent: 205 85% 65%;
+    --accent: 218 73% 43%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 205 85% 65%;
+    --border: 218 20% 90%;
+    --input: 218 20% 90%;
+    --ring: 218 73% 43%;
 
     --radius: 0.75rem;
     
     /* Custom gradient tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(205, 85%, 65%), hsl(210, 90%, 75%));
-    --gradient-soft: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(210, 30%, 98%));
-    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(210, 30%, 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(218, 73%, 43%), hsl(218, 70%, 58%));
+    --gradient-soft: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(218, 30%, 98%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(218, 30%, 98%));
     
     /* Shadow tokens */
-    --shadow-soft: 0 4px 20px rgba(59, 130, 246, 0.1);
-    --shadow-medium: 0 8px 30px rgba(59, 130, 246, 0.15);
-    --shadow-hover: 0 12px 40px rgba(59, 130, 246, 0.2);
+    --shadow-soft: 0 4px 20px hsla(218, 73%, 43%, 0.1);
+    --shadow-medium: 0 8px 30px hsla(218, 73%, 43%, 0.15);
+    --shadow-hover: 0 12px 40px hsla(218, 73%, 43%, 0.2);
     
     /* Animation tokens */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,10 +74,10 @@ All colors MUST be HSL.
     --popover: 220 25% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 205 85% 65%;
-    --primary-light: 210 90% 75%;
-    --primary-dark: 205 75% 55%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 218 73% 43%;
+    --primary-light: 218 70% 58%;
+    --primary-dark: 218 73% 33%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 220 25% 18%;
     --secondary-foreground: 210 40% 98%;
@@ -85,25 +85,25 @@ All colors MUST be HSL.
     --muted: 220 20% 18%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 205 85% 65%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 218 73% 43%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 20% 20%;
     --input: 220 20% 20%;
-    --ring: 205 85% 65%;
+    --ring: 218 73% 43%;
     
     /* Custom gradient tokens - dark mode */
-    --gradient-primary: linear-gradient(135deg, hsl(205, 85%, 65%), hsl(210, 90%, 75%));
+    --gradient-primary: linear-gradient(135deg, hsl(218, 73%, 43%), hsl(218, 70%, 58%));
     --gradient-soft: linear-gradient(180deg, hsl(220, 25%, 10%), hsl(220, 25%, 14%));
     --gradient-card: linear-gradient(135deg, hsl(220, 25%, 12%), hsl(220, 25%, 16%));
     
     /* Shadow tokens - dark mode */
     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
     --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.4);
-    --shadow-hover: 0 12px 40px rgba(59, 130, 246, 0.3);
+    --shadow-hover: 0 12px 40px hsla(218, 73%, 43%, 0.3);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
