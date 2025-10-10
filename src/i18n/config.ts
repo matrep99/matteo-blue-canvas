@@ -4,6 +4,13 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+      passwordProtection: {
+        title: "This portfolio is currently under maintenance ✨",
+        subtitle: "Work in progress…",
+        placeholder: "Enter password",
+        enter: "Enter Portfolio",
+        footer: "Protected content",
+      },
       hero: {
         greeting: "Hi, I'm",
         title: "Matteo Repole",
@@ -66,6 +73,13 @@ const resources = {
   },
   it: {
     translation: {
+      passwordProtection: {
+        title: "Questo portfolio è attualmente in manutenzione ✨",
+        subtitle: "Lavori in corso…",
+        placeholder: "Inserisci password",
+        enter: "Entra nel Portfolio",
+        footer: "Contenuto protetto",
+      },
       hero: {
         greeting: "Ciao, sono",
         title: "Matteo Repole",
