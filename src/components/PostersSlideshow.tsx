@@ -73,8 +73,8 @@ export function PostersSlideshow() {
           <p className="text-base text-muted-foreground">{t("postersSlideshow.subtitle")}</p>
         </motion.div>
 
-        <div className="relative max-w-2xl mx-auto">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-elegant">
+        <div className="relative max-w-md mx-auto">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-elegant">
             <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 key={currentIndex}
@@ -124,7 +124,7 @@ export function PostersSlideshow() {
             <ChevronRight className="h-6 w-6" />
           </Button>
 
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-2 mt-4">
             {posters.map((_, index) => (
               <button
                 key={index}
