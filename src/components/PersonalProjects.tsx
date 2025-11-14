@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { ProjectCard } from "./ProjectCard";
 import typographyImage from "@/assets/project-typography.jpg";
 import posterImage from "@/assets/project-poster.jpg";
+import cardsImage from "@/assets/project-cards.jpg";
 
 export function PersonalProjects() {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ export function PersonalProjects() {
     threshold: 0.1,
   });
 
-  const imageUrls = [typographyImage, posterImage];
+  const imageUrls = [typographyImage, posterImage, cardsImage];
 
   const projects = t("personalProjects.projects", { returnObjects: true }) as Array<{
     title: string;
@@ -37,7 +38,7 @@ export function PersonalProjects() {
           <p className="text-lg text-muted-foreground">{t("personalProjects.subtitle")}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

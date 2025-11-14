@@ -61,6 +61,12 @@ const resources = {
             category: "Print Design",
             description: "A series of minimalist posters exploring color, composition, and negative space.",
             image: "Minimalist poster design with geometric shapes and bold colors"
+          },
+          {
+            title: "Fairytale Cards",
+            category: "Game Design",
+            description: "An enchanting card game set in a magical fairy tale world. Creative illustrations for children's entertainment.",
+            image: "Fairytale themed card game with colorful characters and mystical designs"
           }
         ]
       },
@@ -130,6 +136,12 @@ const resources = {
             category: "Design Stampa",
             description: "Una serie di poster minimalisti che esplorano colore, composizione e spazio negativo.",
             image: "Minimalist poster design with geometric shapes and bold colors"
+          },
+          {
+            title: "Rapone Paese delle Fiabe",
+            category: "Game Design",
+            description: "Un incantevole gioco di carte ambientato in un mondo magico di fiabe. Illustrazioni creative per l'intrattenimento dei bambini.",
+            image: "Gioco di carte a tema fiabesco con personaggi colorati e design mistici"
           }
         ]
       },
@@ -146,8 +158,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'it',
+    fallbackLng: 'it',
     interpolation: {
       escapeValue: false
     }
