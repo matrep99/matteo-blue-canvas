@@ -70,6 +70,10 @@ const resources = {
           }
         ]
       },
+      postersSlideshow: {
+        title: "Poster Collection",
+        subtitle: "A selection of my graphic design posters"
+      },
       footer: {
         rights: "All rights reserved.",
         email: "Email",
@@ -144,6 +148,10 @@ const resources = {
             image: "Gioco di carte a tema fiabesco con personaggi colorati e design mistici"
           }
         ]
+      },
+      postersSlideshow: {
+        title: "Collezione Poster",
+        subtitle: "Una selezione dei miei poster di grafica"
       },
       footer: {
         rights: "Tutti i diritti riservati.",
