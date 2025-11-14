@@ -58,22 +58,22 @@ export function PostersSlideshow() {
   }, [paginate]);
 
   return (
-    <section className="py-20 px-4 bg-muted/30">
-      <div className="container max-w-6xl mx-auto">
+    <section className="py-16 px-4 bg-muted/30">
+      <div className="container max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-10"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
             {t("postersSlideshow.title")}
           </h2>
-          <p className="text-lg text-muted-foreground">{t("postersSlideshow.subtitle")}</p>
+          <p className="text-base text-muted-foreground">{t("postersSlideshow.subtitle")}</p>
         </motion.div>
 
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-2xl mx-auto">
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-elegant">
             <AnimatePresence initial={false} custom={direction}>
               <motion.img
